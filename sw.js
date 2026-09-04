@@ -8,9 +8,9 @@
      · 글꼴(fonts.googleapis.com · fonts.gstatic.com · cdn.jsdelivr.net)은 **한 번 받아 두면 캐시**해
        인터넷이 없어도 같은 글꼴로 보이게 한다(쪽 나눔이 달라지지 않게).
    ⚠ 이 파일은 «따로 있는 파일»이어야 한다 — 단일 HTML 안에 넣을 수 없다(브라우저 규칙). */
-const APP = 'skydoc-app-v1';     /* 화면·아이콘 */
+const APP = 'skydoc-app-v2';   /* 화면·아이콘 — v28 에서 아이콘·앱 이름이 바뀌어 판을 올려 옛 캐시를 버린다 */
 const FONT = 'skydoc-font-v1';   /* 글꼴 */
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-maskable-192.png', './icon-maskable-512.png'];
 const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'cdn.jsdelivr.net'];
 
 self.addEventListener('install', (e) => {
